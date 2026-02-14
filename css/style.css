@@ -1,0 +1,196 @@
+
+/* Global Configuration */
+:root {
+    --primary: #13ec13; /* Vibrant Green from mockup */
+    --primary-dark: #0fbc0f;
+    --dark: #0a0a0a;
+    --surface: #121212;
+    --light: #ffffff;
+    --gray: #4a4a4a;
+    --accent-red: #da291c; /* Man Utd Inspired Red */
+    --accent-gold: #fcc200;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .font-oswald {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Typography Utilities */
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.bg-dark { background-color: var(--dark); }
+.bg-surface { background-color: var(--surface); }
+.text-light { color: var(--light); }
+
+/* Component Styles */
+.navbar.scrolled {
+    background-color: rgba(10, 10, 10, 0.95);
+    padding: 0.5rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--light);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+    display: inline-block;
+    animation: ticker 25s linear infinite;
+    min-width: 200%;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+    animation: fadeUp 1s ease-out forwards;
+}
+
+/* Mobile Menu */
+.hamburger {
+    width: 25px;
+    height: 2px;
+    background-color: var(--light);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--light);
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+.hamburger.active { background-color: transparent; }
+.hamburger.active::before { transform: rotate(45deg); top: 0; }
+.hamburger.active::after { transform: rotate(-45deg); top: 0; }
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+/* Gallery Filtering */
+.filter-btn {
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    padding: 0.5rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.gallery-item {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.gallery-item.hidden {
+    display: none;
+    opacity: 0;
+}
+
+/* Lightbox */
+#lightbox-img {
+    transition: transform 0.3s ease;
+}
+
+/* Tailwind-ish Grid System (Manual) */
+.grid { display: grid; }
+.flex { display: flex; }
+.hidden { display: none; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.flex-col { flex-direction: column; }
+.uppercase { text-transform: uppercase; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.z-50 { z-index: 50; }
+.z-40 { z-index: 40; }
+.gap-4 { gap: 1rem; }
+.gap-8 { gap: 2rem; }
+.p-6 { padding: 1.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mt-20 { margin-top: 5rem; }
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+    .md\:flex { display: flex; }
+    .md\:hidden { display: none; }
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+.aspect-\[4\/5\] { aspect-ratio: 4/5; }
+.aspect-square { aspect-ratio: 1/1; }
+.aspect-video { aspect-ratio: 16/9; }
