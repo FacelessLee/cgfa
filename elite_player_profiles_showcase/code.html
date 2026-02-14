@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Player Profiles | Cosmos Global Football Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0a0a0a",
+                        "card-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "oswald": ["Oswald", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .player-card:hover .stats-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #13ec1333;
+            border-radius: 10px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 min-h-screen">
+<header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex items-center">
+<h1 class="font-oswald font-bold text-2xl tracking-tighter uppercase leading-none">
+                    COSMOS <span class="text-primary">GLOBAL</span><span class="text-white/50 ml-1">F.A.</span>
+</h1>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-[0.15em]">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-primary" href="#">Scout Portal</a>
+<a class="hover:text-primary transition-colors" href="#">Academy News</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary px-6 py-2 rounded text-black text-xs font-black uppercase tracking-widest hover:bg-white transition-all">
+                Sign In
+            </button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12">
+<aside class="w-full lg:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-8">
+<div>
+<h3 class="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-6">Talent Search</h3>
+<div class="relative">
+<input class="w-full bg-white/5 border-white/10 rounded py-3 px-10 text-xs focus:ring-primary focus:border-primary placeholder-white/30" placeholder="SEARCH BY NAME..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-primary text-xl">search</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/5">
+<h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-6">Position</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded text-primary focus:ring-primary bg-transparent border-white/20" type="checkbox"/>
+<span class="text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Forward</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary bg-transparent border-white/20" type="checkbox"/>
+<span class="text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Midfielder</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary bg-transparent border-white/20" type="checkbox"/>
+<span class="text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Defender</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary bg-transparent border-white/20" type="checkbox"/>
+<span class="text-xs font-bold uppercase tracking-widest group-hover:text-primary transition-colors">Goalkeeper</span>
+</label>
+</div>
+</div>
+<div class="pt-6 border-t border-white/5">
+<h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-6">Age Group</h3>
+<select class="w-full bg-white/5 border-white/10 rounded py-2 px-3 text-xs font-bold uppercase tracking-widest focus:ring-primary focus:border-primary text-white">
+<option>All Ages</option>
+<option>Under 17</option>
+<option>Under 19</option>
+<option>Under 23</option>
+</select>
+</div>
+<div class="pt-6 border-t border-white/5">
+<h3 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-6">Graduation</h3>
+<div class="grid grid-cols-2 gap-2">
+<button class="bg-primary/20 text-primary border border-primary/30 px-3 py-2 rounded text-[10px] font-black">2024</button>
+<button class="bg-transparent border border-white/10 px-3 py-2 rounded text-[10px] font-black hover:border-primary transition-colors">2025</button>
+<button class="bg-transparent border border-white/10 px-3 py-2 rounded text-[10px] font-black hover:border-primary transition-colors">2026</button>
+<button class="bg-transparent border border-white/10 px-3 py-2 rounded text-[10px] font-black hover:border-primary transition-colors">2027</button>
+</div>
+</div>
+<div class="pt-8">
+<button class="w-full bg-primary text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-white transition-all">
+<span class="material-symbols-outlined text-sm">filter_alt</span>
+                    Apply Filters
+                </button>
+</div>
+</div>
+</aside>
+<section class="flex-1">
+<div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-8">
+<div>
+<h2 class="text-5xl font-oswald font-bold tracking-tighter uppercase italic leading-none">Elite <span class="text-primary">Prospects</span></h2>
+<p class="text-slate-500 mt-4 text-xs font-bold uppercase tracking-[0.2em]">Showcasing 42 professional profiles for global recruitment</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Sort by:</span>
+<select class="bg-transparent border-none text-xs font-black text-primary focus:ring-0 cursor-pointer uppercase tracking-widest">
+<option>Scout Rating</option>
+<option>Age (Asc)</option>
+<option>Recent Added</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Evhw4i-GRn0R5ACt56VMRKOQ_RgoclA14JSI7-jCqWaiTvUYXbPfsl8xTvgRYZtURV5quQ2DrCgqEigSRcEKv7q4jC_10Z-pK7PjbbMc_V2Q1UOy93ZXagvCGvDWm346XZJabcAIE4C-2eyfpYYer9Ahjgii3acZ3nuvsUcfMzmIqyUHalltp4nPOQBa6rf22NiW0VZ21wQLDDCYchaiUzt3FxASR4clPPlnBgi80eVzaHJyTdwCYtm0Cm0Kr2Z9U5wdhqDyAFQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2024</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">ELITE PROSPECT</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">TUNDE ADEBAYO</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Striker / CF</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#09</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 18 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 188cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Pace</span>
+<span class="text-primary">92</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Shooting</span>
+<span class="text-primary">88</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[88%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Physical</span>
+<span class="text-primary">94</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[94%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBufHU5sSoIgOnt8sx1R616_7jZlsatYduaEkW34Qfw02gju_61nm1pVd0cZwo0TWZuWwfnsSkmQFo9Z3yuJq9ts0lFi1oUZXMWRy1v7q0_Rbj5hoAB8akXj_-QqvISk64tXmCbC0fS-JS1ALX7JHPhdXoISA_kRnxOx1ioRb5j8-sh6ECabFB_yVkLQ47MYirkaxev5rvrm-DzLZpZqOx0jPmyuY0S-xwq8DgO3PDYgFQI5ourO1okl1CABzkwMT0aSMyLroH5dJE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2025</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">RISING STAR</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">EMEKA OKORO</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Midfielder / CAM</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#10</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 17 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 175cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Passing</span>
+<span class="text-primary">95</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[95%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Vision</span>
+<span class="text-primary">91</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[91%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Dribbling</span>
+<span class="text-primary">89</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[89%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk3J-obAAOkLCP45R8mxz85QtrScRxMT-yUFKeQQSf2rQaP0sikAjzjppzG5EsmgISw2-_tuk55KmPYOblpskzmRdVduLL9NjsC34dA_suqgEFQoqGcMC5AFRrsxs74_OE31qtA6evRNCz91KaqLhJiJ01aow2XgFPZWvz6QdKd8PZq9JSC00jb4YCKIM8wmGLew74x01c2H_k9sxDnWtHkWx_kYo9mFw7c792Si3imHJOwokj5jrZUL5YCpFW5qgfGpH_KurrhhM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2024</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">DEFENSIVE ROCK</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">MUSA IBRAHIM</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Defender / CB</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#04</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 19 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 192cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Defending</span>
+<span class="text-primary">96</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[96%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Heading</span>
+<span class="text-primary">94</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Strength</span>
+<span class="text-primary">98</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDusQi0JvCPx6hSytOtNjz_G66ns3emJAZWhRqesxzDo8EYty_HRzTTb1x39Ioyz_lnGjobnDRN8sEdrYthkAysyFzjpAstgWxXEBcKyqoE3-2m95uRR6EhkWd27KWgBQkQUMCdYBH8G5sZZqdrlesqS6aAcM8fPOSEypKaGSXjY1sEnNefH6yNHk3gJrb1PsKojU_Rnx_zPCgdl8SKE8iP-RLX0CxzijsbeOrKS1tc0CIC7L-z1PhjWX0dCeQ7miOgwdqP9MbQ-zI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2026</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">THE WALL</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">CHUKWUEMEKA N.</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Goalkeeper / GK</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#01</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 16 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 190cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Reflexes</span>
+<span class="text-primary">98</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Diving</span>
+<span class="text-primary">94</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Handling</span>
+<span class="text-primary">92</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2KUgs6EJDLdauLYg4zxXhUFirMGfuwUAIeygoHo53S9rX2dYC-UzqLgaI9-2kI9UG63ll6hYOTQuzmdpGOSsitwEKnpHc9wtddUvhx6ofP6W8tWf568S1Yq7puSWesyMxdEWsjcgRS8fkZVImR-54cd5jMpF-gfp2Q4VMsvWVsMOR_7Nm0ZfO_Inp9q5LcvJS-f2FQwKNF_b14C6KQw4ivPI7IYnRgBcx3UNEGwBeXJmlLKMT_Y157w-Dv7NnVmYkExDkxXtJPI4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2024</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">SPEEDSTER</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">OLUMIDE J.</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Winger / LW</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#11</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 18 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 170cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Pace</span>
+<span class="text-primary">99</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[99%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Agility</span>
+<span class="text-primary">97</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[97%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Crossing</span>
+<span class="text-primary">88</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[88%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="player-card group relative bg-card-dark border border-white/5 rounded overflow-hidden transition-all duration-300 hover:border-primary/40">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzQ03d0gy5eg3epXOHkgYMi-G4SKV1haeKwTEw7j9upFdbEjPRd6eFqzSgYzyhdZm3vJhzTpm9nFNDKTOj5Rkn25f2EaAXuFJvez9SsnJ-goV-BjjVIjPCOPXNCYeDCTo6yoWR5XPR_WzcvsutzQfyrpELOBZo_uiN6CZnucGgKMG8R_RpbdUAaiziMvfpxHmVWnNfEx7rVDe3mICej8kI6x-6LVgD6Fj6GnaOszlXF4608Z1YSNW24DfKizqLNXOs75xww7zW0DQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black px-2 py-1 rounded-sm text-[9px] font-black uppercase tracking-tighter">GRAD 2025</span>
+<span class="bg-black/90 backdrop-blur-md text-white px-2 py-1 rounded-sm text-[9px] font-bold uppercase tracking-widest border border-white/10">THE ENGINE</span>
+</div>
+</div>
+<div class="p-6 relative">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-oswald font-bold uppercase leading-none mb-1 group-hover:text-primary transition-colors">CHINEDU E.</h3>
+<p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Midfielder / CDM</p>
+</div>
+<div class="text-right">
+<span class="text-4xl font-oswald font-bold text-white/5 italic">#06</span>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">calendar_today</span> 17 Years</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">height</span> 180cm</span>
+</div>
+</div>
+<div class="stats-overlay absolute inset-0 bg-black/95 p-8 flex flex-col justify-center opacity-0 transform translate-y-4 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+<h4 class="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-8 border-b border-white/10 pb-4">Technical Analysis</h4>
+<div class="space-y-6 mb-10">
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Stamina</span>
+<span class="text-primary">99</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[99%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Tackling</span>
+<span class="text-primary">92</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[9px] uppercase font-black mb-2 tracking-widest">
+<span>Work Rate</span>
+<span class="text-primary">98</span>
+</div>
+<div class="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+</div>
+</div>
+<button class="w-full bg-white text-black font-black py-4 rounded text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary transition-all">
+                        View Full Profile
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-20 flex flex-col items-center gap-8">
+<button class="group relative px-16 py-5 bg-transparent border border-white/20 rounded-sm overflow-hidden transition-all hover:border-primary">
+<span class="relative z-10 text-white font-black uppercase tracking-[0.3em] text-xs group-hover:text-black transition-colors">Load More Profiles</span>
+<div class="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
+</button>
+<p class="text-[9px] text-slate-600 font-bold uppercase tracking-[0.4em]">Displaying 6 of 42 active prospects</p>
+</div>
+</section>
+</main>
+<footer class="mt-32 border-t border-white/5 bg-black py-20">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="md:col-span-1">
+<h2 class="font-oswald font-bold text-xl tracking-tighter uppercase mb-8 leading-none">
+                COSMOS <span class="text-primary">GLOBAL</span><span class="text-white/50 ml-1">F.A.</span>
+</h2>
+<p class="text-slate-500 text-[11px] font-bold uppercase tracking-widest mb-10 leading-relaxed">
+                Nurturing the champions of tomorrow with professional coaching and world-class facilities.
+            </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<span class="material-symbols-outlined text-sm">call</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-white">Quick Links</h3>
+<ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Directors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-white">Contact Us</h3>
+<ul class="space-y-4 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> +234 8133048795</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">call</span> +234 8060021355</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">mail</span> contact@cosmosglobalevents.com.ng</li>
+</ul>
+</div>
+<div>
+<h3 class="text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-white">Locations</h3>
+<div class="grid grid-cols-2 gap-4 text-[10px] font-black text-slate-600 uppercase tracking-widest">
+<span>Lagos (HQ)</span>
+<span>London</span>
+<span>Barcelona</span>
+<span>Sao Paulo</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[9px] text-slate-700 font-black uppercase tracking-[0.4em]">© 2025 Cosmos Global Football Academy. All Rights Reserved.</p>
+<div class="flex gap-8 text-[9px] text-slate-700 font-black uppercase tracking-[0.4em]">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+
+</body></html>

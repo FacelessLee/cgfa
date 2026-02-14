@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Top Talents - Cosmos Global Football Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: #050a05;
+        }
+        .mobile-container {
+            max-width: 450px;
+            margin: 0 auto;
+            min-height: 100vh;
+            position: relative;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #102210;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #13ec13;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white">
+<!-- Desktop Gutter Background (Only visible on large screens) -->
+<div class="fixed inset-0 z-0 bg-gradient-to-br from-black via-[#0a1a0a] to-black hidden md:block">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#13ec13_1px,transparent_1px)] [background-size:20px_20px]"></div>
+</div>
+<!-- Main Mobile Container -->
+<div class="mobile-container relative z-10 bg-background-light dark:bg-background-dark shadow-2xl overflow-x-hidden flex flex-col min-h-screen">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/20 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-black font-bold">sports_soccer</span>
+</div>
+<h1 class="font-bold text-lg tracking-tight uppercase">Cosmos <span class="text-primary">Global</span></h1>
+</div>
+<button class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 hover:bg-primary/20 transition-colors">
+<span class="material-icons text-primary">filter_list</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 py-6 space-y-8 overflow-y-auto custom-scrollbar">
+<!-- Welcome Section -->
+<section>
+<h2 class="text-2xl font-bold">Top Talents</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Discover the next generation of Nigerian football stars.</p>
+</section>
+<!-- Player Grid (Single Column) -->
+<div class="space-y-6">
+<!-- Player Card 1 -->
+<div class="group relative rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Chidi Okafor Action Shot" class="w-full h-full object-cover" data-alt="Young footballer sprinting during a match" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-V-x6gU4Nht6hMveg0sxq-GFdRVXJxU4Qwmk0HW2LrLrzgWpN_ClMh6A6RA8UZejOljzClrYEdKym5fmLhm1mQsOvHArZnKXY7L63xugnP-b4Ku5Hezft0ZlwChGnZN9y8944Zj7I5VQsPop9vwe1P0N6zFApHO-iag0dKgVdmSkdLbKivAd_4BaO12AY3R_Rpj96-itmLrQrS1Q1wzzdg3oxsjvMVhbuu2pcvw9v3zFLzB3LK6RKLsfTTvRHOWTWyrI_IlqwwXY"/>
+<!-- Badges Overlay -->
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Top Prospect</span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded uppercase border border-white/20">U-19</span>
+</div>
+<!-- Stats Overlay -->
+<div class="absolute bottom-4 left-4 right-4 bg-black/40 backdrop-blur-md border border-white/10 rounded-lg p-3 grid grid-cols-3 gap-2">
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Pace</p>
+<p class="text-lg font-bold text-primary">94</p>
+</div>
+<div class="text-center border-x border-white/10">
+<p class="text-[10px] text-white/60 uppercase">Goals</p>
+<p class="text-lg font-bold text-primary">18</p>
+</div>
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Assists</p>
+<p class="text-lg font-bold text-primary">07</p>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">Chidi Okafor</h3>
+<p class="text-primary font-medium text-sm">Center Forward</p>
+</div>
+<div class="bg-primary/20 text-primary px-2 py-1 rounded-md text-[10px] font-bold">LAGOS DIV</div>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Explosive power and clinical finishing. Currently leading the Nigerian youth league scoring charts.</p>
+<button class="w-full bg-primary hover:bg-primary/90 text-black font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span>VIEW FULL PROFILE</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Player Card 2 -->
+<div class="group relative rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Olumide Adeyemi Action Shot" class="w-full h-full object-cover" data-alt="Midfielder controlling a ball with focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6mRjElSLfEv88TAi7cO7fyOryKq5kvoNWa1F07mzIbijnixqafBYc-893hXZITd7bisCR9gXcdGF__-99jpXkE3JOGXxrAqpHTCK7w0_aa9Rp61bCZR9wc31DeC0RKFDs7zpDsnXkNq8At7bRdbFbk3cdjuJBauQ-ChdNMOIOy0xjYy_xYfLYy-90ha4m4_-CkeIn-KpWiwhDQRGUry3wsIFpp8BxWJ1-2al_XU14hq5aXUi5BpUVd1BA0j5zhlrfS3v4mZqh2bM"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Playmaker</span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded uppercase border border-white/20">U-21</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-black/40 backdrop-blur-md border border-white/10 rounded-lg p-3 grid grid-cols-3 gap-2">
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Pass</p>
+<p class="text-lg font-bold text-primary">89</p>
+</div>
+<div class="text-center border-x border-white/10">
+<p class="text-[10px] text-white/60 uppercase">IQ</p>
+<p class="text-lg font-bold text-primary">92</p>
+</div>
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Dist</p>
+<p class="text-lg font-bold text-primary">11km</p>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">Olumide Adeyemi</h3>
+<p class="text-primary font-medium text-sm">Creative Midfielder</p>
+</div>
+<div class="bg-primary/20 text-primary px-2 py-1 rounded-md text-[10px] font-bold">ABUJA ACAD</div>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">The heart of the midfield with exceptional vision and ball-retention capabilities under pressure.</p>
+<button class="w-full bg-primary hover:bg-primary/90 text-black font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span>VIEW FULL PROFILE</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Player Card 3 -->
+<div class="group relative rounded-xl overflow-hidden bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Blessing Ibrahim Action Shot" class="w-full h-full object-cover" data-alt="Goalie jumping to save a shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBghbRZLcbZ51gUqC3PP9CcsGGhMU-Q5ZgAKSJwvO8Ds1aoWLWyP2orc0qrMVnVoLHZan-nroml11_68RWDgME-AEN7tcuTwYFrzU_0SSHBtLL8LBRZU9i-ySKyccSWI4zs4J_-vRbAhJ2_UBgPFUksCldyRSHDjj3qgxktFYmuvsZIO5g5WKPeU0XGeebdzXyKT8cPFZXPZy8nV9GEdm6ktHyqanE6cFNh4BLmKFKGSzbcG0fAD82A9lZpNatPxjBpPK_7T-KyDhs"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-primary text-black text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Shot Stopper</span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-medium px-2 py-1 rounded uppercase border border-white/20">U-17</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-black/40 backdrop-blur-md border border-white/10 rounded-lg p-3 grid grid-cols-3 gap-2">
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Reflex</p>
+<p class="text-lg font-bold text-primary">95</p>
+</div>
+<div class="text-center border-x border-white/10">
+<p class="text-[10px] text-white/60 uppercase">Saves</p>
+<p class="text-lg font-bold text-primary">42</p>
+</div>
+<div class="text-center">
+<p class="text-[10px] text-white/60 uppercase">Clean</p>
+<p class="text-lg font-bold text-primary">12</p>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">Blessing Ibrahim</h3>
+<p class="text-primary font-medium text-sm">Goalkeeper</p>
+</div>
+<div class="bg-primary/20 text-primary px-2 py-1 rounded-md text-[10px] font-bold">KANO ELITE</div>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Remarkable reach and reflexes. Widely considered the most promising young keeper in West Africa.</p>
+<button class="w-full bg-primary hover:bg-primary/90 text-black font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span>VIEW FULL PROFILE</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Load More Indicator -->
+<div class="py-10 flex flex-col items-center justify-center gap-3">
+<div class="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Discovering More Talent</p>
+</div>
+</main>
+<!-- Mobile Footer Nav -->
+<footer class="bg-slate-100 dark:bg-black/50 border-t border-slate-200 dark:border-white/10 p-4">
+<div class="flex justify-around items-center mb-6">
+<a class="text-primary" href="#"><span class="material-icons">home</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons">explore</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons">groups</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-icons">person</span></a>
+</div>
+<div class="text-center pb-2">
+<div class="flex justify-center gap-4 mb-3">
+<span class="material-icons text-sm text-slate-500">facebook</span>
+<span class="material-icons text-sm text-slate-500">camera_alt</span>
+<span class="material-icons text-sm text-slate-500">alternate_email</span>
+</div>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest">© 2024 Cosmos Global Football Academy</p>
+</div>
+</footer>
+<!-- Filter Drawer Overlay (Placeholder for Interaction) -->
+<div class="absolute inset-0 bg-black/60 backdrop-blur-sm z-50 hidden opacity-0 pointer-events-none transition-opacity">
+<div class="absolute bottom-0 left-0 right-0 bg-background-dark border-t-2 border-primary rounded-t-3xl p-6 transform translate-y-full transition-transform">
+<div class="w-12 h-1 bg-white/20 rounded-full mx-auto mb-6"></div>
+<h3 class="text-xl font-bold mb-4">Filter Scouts</h3>
+<div class="space-y-4">
+<div>
+<label class="block text-[10px] text-slate-400 uppercase font-bold mb-2">Position</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 rounded-lg bg-primary text-black font-bold text-sm">All</button>
+<button class="py-2 rounded-lg bg-white/10 text-white font-medium text-sm">Forward</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

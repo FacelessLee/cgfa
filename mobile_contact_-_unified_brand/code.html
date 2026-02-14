@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Contact - Cosmos Global Football Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white min-h-screen flex flex-col">
+<!-- Mobile-Optimized Header -->
+<header class="sticky top-0 z-50 bg-background-dark/95 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+<span class="material-icons text-background-dark text-xl">sports_soccer</span>
+</div>
+<span class="font-bold text-lg tracking-tight uppercase italic">Cosmos<span class="text-primary">Global</span></span>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-primary text-background-dark font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider">Join Now</button>
+<button class="text-primary p-1">
+<span class="material-icons text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow max-w-md mx-auto w-full">
+<!-- Hero Section -->
+<section class="relative h-48 flex items-end p-6 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Aerial view of a vibrant green football pitch in Lagos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD7zT9BN-uoRJ2BX6YgPR-oOkOeu_tJouvdc-iUNf_P_HHf_r6Ax3Ow338mNH5ulntWnhj35V52ymRHDerSABwVTKIq4HBKoOr_1oG18GOlFpRDSESpMl2Or_flcqMumDrzwahbzuVr6CF-FMLFd2b1yuMIXo4KdqiKFRhl_UGUum1C-Tdozd68hWCGCigIrUQY8PZsWAtxJ0txnByWOH50o1jZsqJT7kclwATB7YlWKQ_2s2kHeIqjVK8aG_FmD2l5U7HwQtOJec"/>
+<div class="relative z-20">
+<h1 class="text-4xl font-bold leading-tight">Get in <span class="text-primary italic">Touch.</span></h1>
+<p class="text-primary/80 font-medium">Lagos Academy Hub</p>
+</div>
+</section>
+<!-- Quick Action Buttons -->
+<section class="grid grid-cols-2 gap-3 p-4">
+<a class="flex flex-col items-center justify-center bg-primary/10 border border-primary/20 p-4 rounded-xl active:bg-primary/20 transition-colors" href="tel:+2348000000000">
+<span class="material-icons text-primary text-3xl mb-2">call</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-primary/80">Call Us</span>
+<span class="text-sm font-bold">+234 800 COSMOS</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary text-background-dark p-4 rounded-xl active:scale-95 transition-transform" href="#">
+<span class="material-icons text-3xl mb-2">message</span>
+<span class="text-xs font-bold uppercase tracking-widest">WhatsApp</span>
+<span class="text-sm font-black">Chat Now</span>
+</a>
+</section>
+<!-- Contact Form -->
+<section class="px-4 py-6">
+<div class="bg-primary/5 border border-white/5 rounded-2xl p-6 shadow-xl">
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                    Send an Inquiry
+                </h2>
+<form class="space-y-5">
+<div class="space-y-1.5">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60 ml-1">Full Name</label>
+<input class="w-full bg-background-dark border-2 border-primary/20 rounded-lg px-4 py-4 text-white placeholder:text-white/20 focus:border-primary focus:ring-0 transition-all text-lg" placeholder="John Obi" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60 ml-1">Email Address</label>
+<input class="w-full bg-background-dark border-2 border-primary/20 rounded-lg px-4 py-4 text-white placeholder:text-white/20 focus:border-primary focus:ring-0 transition-all text-lg" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60 ml-1">Inquiry Type</label>
+<select class="w-full bg-background-dark border-2 border-primary/20 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-0 transition-all text-lg appearance-none">
+<option>Academy Trials</option>
+<option>Sponsorships</option>
+<option>Media Inquiry</option>
+<option>General Information</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-bold uppercase tracking-widest text-primary/60 ml-1">Message</label>
+<textarea class="w-full bg-background-dark border-2 border-primary/20 rounded-lg px-4 py-4 text-white placeholder:text-white/20 focus:border-primary focus:ring-0 transition-all text-lg" placeholder="Tell us about your football journey..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-background-dark font-black py-5 rounded-xl text-lg uppercase tracking-tighter flex items-center justify-center gap-2 active:scale-95 transition-all" type="submit">
+                        Send Message
+                        <span class="material-icons">send</span>
+</button>
+</form>
+</div>
+</section>
+<!-- Localized Info Cards -->
+<section class="px-4 py-4 space-y-4">
+<div class="flex items-start gap-4 p-5 bg-white/5 rounded-xl border border-white/10">
+<div class="bg-primary/20 p-3 rounded-lg">
+<span class="material-icons text-primary">location_on</span>
+</div>
+<div>
+<h3 class="font-bold text-lg">Lagos HQ</h3>
+<p class="text-white/60 text-sm leading-relaxed">
+                        12 Academy Way, Off Lekki-Epe Expressway,<br/>
+                        Lagos, Nigeria.
+                    </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-white/5 rounded-xl border border-white/10">
+<div class="bg-primary/20 p-3 rounded-lg">
+<span class="material-icons text-primary">email</span>
+</div>
+<div>
+<h3 class="font-bold text-lg">Official Email</h3>
+<p class="text-white/60 text-sm">nigeria@cosmosglobal.football</p>
+<p class="text-white/60 text-sm">trials@cosmosglobal.football</p>
+</div>
+</div>
+</section>
+<!-- Interactive Map Section -->
+<section class="px-4 py-6">
+<div class="rounded-2xl overflow-hidden border-2 border-primary/20 h-64 relative bg-primary/10">
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="material-icons text-primary text-5xl animate-bounce">location_on</span>
+<div class="bg-background-dark px-3 py-1 rounded-full border border-primary/50 text-[10px] font-bold uppercase tracking-widest shadow-2xl">Cosmos Lagos Academy</div>
+</div>
+</div>
+<img class="w-full h-full object-cover opacity-60 grayscale brightness-50 contrast-125" data-alt="Simplified map of Lagos showing the academy location" data-location="Lagos, Nigeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDmk_Kr1YKSUY_UfnZyELw-pb-dyBsQ7v5hpsMWZmXHvsixr3AwyEorwoq9Y5xkBHaeob3zkmmqHrX2J9wyyJ-kaOOFmz3tyr8SwcCyThwUqRe_HipTo0c4g3oFp-_TrsEcgsptSFLLKH9kLV3XdHJoCM6POk-MalbP2TIqu-Dknjr3XeJXHmnLlnDMzC3qCM5c07ctWL70gJcL2N02dQhfHN1sXr_SO44RTnCDgD6RS0xqReqa3h1PvkFaBkXeDAPdafK44sxqFc"/>
+<div class="absolute bottom-4 right-4 z-20">
+<button class="bg-background-dark/80 backdrop-blur-sm p-3 rounded-full border border-white/10 shadow-lg">
+<span class="material-icons text-white">directions</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Mobile Footer -->
+<footer class="bg-background-dark border-t border-white/5 px-4 pt-10 pb-6 max-w-md mx-auto w-full">
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="flex items-center gap-2 opacity-50">
+<div class="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+<span class="material-icons text-background-dark text-sm">sports_soccer</span>
+</div>
+<span class="font-bold text-sm tracking-tight uppercase italic">Cosmos<span class="text-primary">Global</span></span>
+</div>
+<div class="flex gap-6">
+<a class="text-white/40 hover:text-primary transition-colors" href="#"><span class="material-icons">facebook</span></a>
+<a class="text-white/40 hover:text-primary transition-colors" href="#"><span class="material-icons">photo_camera</span></a>
+<a class="text-white/40 hover:text-primary transition-colors" href="#"><span class="material-icons">smart_display</span></a>
+</div>
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
+<a href="#">Trials</a>
+<a href="#">Programs</a>
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+</nav>
+<p class="text-[10px] text-white/20 font-medium">
+                © 2024 Cosmos Global Football Academy Nigeria. All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- Floating Action Button for Contact Support -->
+<div class="fixed bottom-6 right-6 z-[60]">
+<button class="bg-primary text-background-dark w-14 h-14 rounded-full shadow-2xl flex items-center justify-center border-4 border-background-dark active:scale-90 transition-transform">
+<span class="material-icons">support_agent</span>
+</button>
+</div>
+</body></html>

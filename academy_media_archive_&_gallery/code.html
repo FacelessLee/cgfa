@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Media Archive | Cosmos Global Football Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#16A34A",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0A0A0A",
+                        "card-dark": "#171717",
+                        "border-dark": "#262626",
+                    },
+                    fontFamily: {
+                        display: ["Oswald", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .media-hover-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-white/95 dark:bg-black/95 backdrop-blur-md border-b border-slate-200 dark:border-border-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex-shrink-0">
+<img alt="Cosmos Global Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4FhpSN8PgMi7815imurzn-mbmbCnidj4w7Ew_vuOEEIKoYEGYNvxi260Nc8GFv2kEYwECNuKTr7-gkqgGvqbiufOsWag-_ulAfsztRFX3vEUkjzAYG1jkRCz29AuNjjSVYhnpAic1oD_3EfSOv0elw40fLVJ0T94q1G913TTjkpdS7n-lzSTDZuUgGzGOziK0sII3a0DEgvcPJFvIpCZ3yODwNfWFMZSi1H-7ORJTP64KG04kda3ofp2YrUxBUL-4U-oMSGrJlpc"/>
+</div>
+<span class="font-display text-2xl font-bold tracking-tighter">
+<span class="text-primary uppercase">Cosmos Global</span><span class="dark:text-white uppercase"> F.A.</span>
+</span>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-sm font-semibold uppercase tracking-wide hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold uppercase tracking-wide hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-semibold uppercase tracking-wide text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-semibold uppercase tracking-wide hover:text-primary transition-colors" href="#">Directors</a>
+<a class="text-sm font-semibold uppercase tracking-wide hover:text-primary transition-colors" href="#">Blog</a>
+<a class="px-6 py-2.5 bg-primary text-white text-sm font-bold rounded hover:bg-green-700 transition-all uppercase tracking-widest" href="#">Contact</a>
+</div>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<header class="py-16 md:py-24 bg-slate-50 dark:bg-neutral-900/40 border-b border-slate-200 dark:border-border-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="font-display text-5xl md:text-7xl font-bold uppercase tracking-tight mb-6">
+            Academy <span class="text-primary">Media Archive</span>
+</h1>
+<p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-lg">
+            A world-class showcase of our elite training sessions, high-stakes matches, and landmark academy events.
+        </p>
+</div>
+</header>
+<section class="py-6 sticky top-20 z-40 bg-white/90 dark:bg-background-dark/95 backdrop-blur-sm border-b border-slate-200 dark:border-border-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap items-center justify-between gap-6">
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 rounded-full bg-primary text-white font-bold text-xs uppercase tracking-widest transition-all shadow-lg shadow-primary/20">All</button>
+<button class="px-6 py-2 rounded-full bg-white dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:border-primary dark:hover:border-primary text-xs font-bold uppercase tracking-widest transition-all">Training</button>
+<button class="px-6 py-2 rounded-full bg-white dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:border-primary dark:hover:border-primary text-xs font-bold uppercase tracking-widest transition-all">Match Day</button>
+<button class="px-6 py-2 rounded-full bg-white dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:border-primary dark:hover:border-primary text-xs font-bold uppercase tracking-widest transition-all">Events</button>
+</div>
+<div class="relative w-full md:w-auto">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400 text-lg">search</span>
+<input class="pl-10 pr-4 py-2 bg-white dark:bg-card-dark border border-slate-200 dark:border-border-dark rounded-full text-sm focus:ring-1 focus:ring-primary focus:border-primary w-full md:w-64 outline-none transition-all" placeholder="Search archive..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<main class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Elite Midfield Drills" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAut4Q3BCNr5t-ygROo4eqS01_62tC0pcRdsnWzHuF8BTz0I5XEzA9JBGfkLqPL4eg6SnVD1SwZR_srXMF3oM4suyCTD7KyY32SNfA2PlzNg6GZWk8h6F7OLpq83vD3Ix89CjqcK7_tNMKJYRbeC_geApTBW8XnWlAxUyOXAtJMPxRexRDd2vGFoComjZe9uiNeSxzqT7-96CC9Qw4tHoDhO-TQ140omeWSE5Q549S8zIkviUy5AmKVGvQ6VszLHqyFbQWOeLrGI18"/>
+<div class="absolute inset-0 media-hover-overlay opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-4xl filled-icon">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 2,500</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary text-[10px] font-bold text-white rounded uppercase tracking-wider">Video</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">12 Oct 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">Elite Midfield Drills</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    National Stadium, Surulere, Lagos
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    Intensive technical drill session focusing on ball retention and rapid transition play.
+                </p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Final Whistle Moment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ8xetC2oA165L-v58sr3qrpq472Gre3RJBktNaIfdn6S-JF3ZPxReIr5uzgOaOVVzfra9iW3BI8aBYsq3CUILsTLt4iex-PpvrJwn68VUA_hfM8vbQ_iLUo9G1QcNMkkYW3ujvjPUtgHXGJPW2CDVZdhiQXb87fRj_2vdQ2sOqJ-0PI5xW9Eqoy-W1RqA8Qq4MwQp1O5ZSn4EfZv-v4PimZ-iJC7zcwEBxMWORYh9jk8PlZW6lR3wEf_NDfAFV5hnI2J50imUnLs"/>
+<div class="absolute inset-0 media-hover-overlay opacity-60 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 1,200</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-slate-700 text-[10px] font-bold text-white rounded uppercase tracking-wider">Photo</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">08 Oct 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">Final Whistle Moment</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    Teslim Balogun Stadium, Surulere
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    Celebration after the U17 squad secured a crucial victory in the regional play-offs.
+                </p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Goalkeeper training" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxj9c-fFF74mBdQ1xh_CG5joi54TDOah6vV8N6lYq3Kjfm7A1w5FQmz4C1KqE0p4JWwJIrlYEEIz1udeZ70v8O5bEiA_JadOIa3-ocdsI57zFiN_-FG9FudcLel6VkcGTPuhm4E2Bym-Mc36c034IHc5Qp2ashSGuctG57ffHBV2AAsDQFSFai3WyOYGI3feW56CfThIVeFDhTOzHsegT7ac2O4T62cSGjhI3sVGsW5XR3flvZ95CaZW5KTXGrFXnPJdP980f2PP4"/>
+<div class="absolute inset-0 media-hover-overlay opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-4xl filled-icon">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 2,500</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary text-[10px] font-bold text-white rounded uppercase tracking-wider">Video</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">05 Oct 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">The Wall: GK Intensive</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    National Stadium Complex, Lagos
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    Reaction and positioning masterclass for our lead goalkeeping prospects.
+                </p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Academy team talk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAESVLu_mR6bLpwd9B4aexbqrpxmb_Ld5xNIJTYnU8OZVki-ILuYKupexSkZG5rNCvcLk8b-ZKuICd9eh8srgKYUoxlNiYwL3eZ7NUXNTxuL110sqf_dpVbT7EV0t8WCa-9eNF4J2HVkkQ10lhenqwOowW6ONf_d1uctwAK0-AoWvSSIwFWcfiQHt4AyvxxAgUWet34WuW2xQh2wqrBc_wsJYmgHqXG2KY8zGl56v-uiRM5448un6Nx4lvz7suwbuk3dT2otqb1_KI"/>
+<div class="absolute inset-0 media-hover-overlay opacity-60 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 1,200</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-slate-700 text-[10px] font-bold text-white rounded uppercase tracking-wider">Photo</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">01 Oct 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">Leadership Circle</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    Ikeja Training Center, Lagos
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    Half-time tactical breakdown during the Independence Day tournament.
+                </p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Scouting event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCepjBVnmwr2_bqGcOJIwf8mMHRnemPxe4LG6SqDDI-YfQfAHumSfwm-Nc8GNVdY1aPUrQo_TJde1NMUZJuwsLGpfSQIlMEFsFVeKepIolGOivgC4jmkBg0fluj6tO3BBtX54iFTrI9chGOhQthrtOf6t8ajLORIakGr6svH_J1DmLkTt-gljT8LO-zOay0aQNP6_Zksz0M937zjC_J4T2HKtdm37J7lvmpO1EbUTbOiAjNeZqHdy6_aPzJ3TH01Ev9HG28PK3q0ac"/>
+<div class="absolute inset-0 media-hover-overlay opacity-60 group-hover:opacity-95 transition-opacity"></div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 1,200</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-slate-700 text-[10px] font-bold text-white rounded uppercase tracking-wider">Photo</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">28 Sep 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">Scout Showcase Day</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    National Stadium, Surulere, Lagos
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    International scouts observing the U20 squad in a competitive trial match.
+                </p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-card-dark border border-slate-200 dark:border-border-dark hover:shadow-2xl transition-all duration-500">
+<img alt="Fitness session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MuJBK4HcJoUau7rfdmdfo4h9wJd_psEqgLwMjoO3yz3s_tXEuPvku9vi1wxvfae2YkXNvvFecZrs6j5OQvKMfDzFStHxBJvdczbamPRSjgTt8tbSoZvWsMLfk6RIzCRFmfK_D6eODRQRg-tJJ6jsHsOCTINSEc0FpUWIAI0-ZixqFawe8WCKIOcJfMt0rU2YZTOnJEvKnnw4SjPCu_bHXWNs1eUEiVtGp4SOkfyuWivXOwNsgWYIx9x5SadvCXPpbTdnU7gJa2A"/>
+<div class="absolute inset-0 media-hover-overlay opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-white flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-4xl filled-icon">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/20">
+<span class="text-white font-bold text-xs">₦ 2,500</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary text-[10px] font-bold text-white rounded uppercase tracking-wider">Video</span>
+<span class="text-[10px] text-slate-300 uppercase tracking-widest font-semibold">22 Sep 2024</span>
+</div>
+<h3 class="font-display text-xl text-white uppercase mb-2">Peak Fitness</h3>
+<div class="flex items-center gap-1.5 text-slate-300 text-xs mb-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                    Academy HQ Gym, Lagos
+                </div>
+<p class="text-sm text-slate-400 line-clamp-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    Behind the scenes look at the elite strength and conditioning program.
+                </p>
+</div>
+</div>
+</div>
+<div class="mt-20 text-center">
+<button class="px-12 py-4 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold uppercase tracking-widest transition-all duration-300 rounded-md">
+            Load More Content
+        </button>
+</div>
+</main>
+<footer class="bg-slate-50 dark:bg-card-dark border-t border-slate-200 dark:border-border-dark pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10">
+<img alt="Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMLWpZQoaQaBDxjk3kTu31HQM3t7ieJov1q7HFcrd2PkPbSO0RMftkJAWilpGW-Kf4Wv6C4uwS8SUCdqwl_lkHrUiSx_NalQgVP8ENQhr3NJU8v7lAZEa8EE2wX8N6iSHfZOG6ZFfXx0vhdGtfzwYqoGcOvTvNxc8yHviZUFYaxglDkBkWCWfDo0hm63ZAmyGhc0h7sVZKBYwBo5YTAyO7iFP9oQssgVq6ACRpW8pzdp9nv02JQVl9fAgug4HsOM9Qo70LO7i54Uw"/>
+</div>
+<h4 class="font-display text-xl font-bold uppercase text-primary">Cosmos Global</h4>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                    Professionalizing youth football in Nigeria through elite coaching and world-class developmental programs.
+                </p>
+<div class="flex gap-4">
+<a class="w-9 h-9 rounded-full border border-slate-300 dark:border-border-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a class="w-9 h-9 rounded-full border border-slate-300 dark:border-border-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">social_leaderboard</span>
+</a>
+<a class="w-9 h-9 rounded-full border border-slate-300 dark:border-border-dark flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-display text-lg font-bold uppercase mb-8 dark:text-white tracking-wider">Programs</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Youth Development</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Elite Academy</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Goalkeeper School</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Scouting Trials</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display text-lg font-bold uppercase mb-8 dark:text-white tracking-wider">Quick Links</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors font-medium" href="#">About Academy</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Our Directors</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Media Archive</a></li>
+<li><a class="hover:text-primary transition-colors font-medium" href="#">Latest News</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display text-lg font-bold uppercase mb-8 dark:text-white tracking-wider text-primary">Contact Us</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<div class="flex flex-col">
+<span>+234 8133048795</span>
+<span>+234 8060021355</span>
+</div>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+                        contact@cosmosglobalevents.com.ng
+                    </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>National Stadium Complex,<br/>Surulere, Lagos, Nigeria</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-border-dark flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-slate-400 uppercase tracking-[0.2em]">
+                © 2025 Cosmos Global Football Academy. All Rights Reserved.
+            </p>
+<div class="flex gap-6 text-[10px] text-slate-400 uppercase tracking-[0.1em]">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

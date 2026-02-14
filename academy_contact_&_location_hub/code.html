@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Hub | Cosmos Global Football Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                        "neutral-dark": "#0a140a",
+                        "neutral-surface": "#1a2e1a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"],
+                        "oswald": ["Oswald"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #13ec13;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<nav class="sticky top-0 z-50 bg-background-light/95 dark:bg-neutral-dark/95 backdrop-blur-md border-b border-primary/10 shadow-lg">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-icons text-background-dark">sports_soccer</span>
+</div>
+<span class="font-oswald text-2xl font-bold tracking-wider uppercase text-slate-900 dark:text-white">Cosmos Global F.A.</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Directors</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary pb-1" href="#">Contact</a>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-6 py-2 rounded-lg transition-all transform hover:scale-105 active:scale-95">
+                Join Now
+            </button>
+</div>
+</nav>
+<main class="flex-grow">
+<section class="relative py-16 bg-neutral-dark overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark to-transparent"></div>
+<img alt="Football pitch" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7U3OZ3BnPFCcY9lU2d1n5ks_W4WqEVKsW9vn5XmTvJ561C4NZAu9yVyr6gQ_Lo5C1asbL8LTl3ixM_AqZhBYNLz26riZ7vShM4aWg6NegvMQV1UxCWIYMKtEwsKYN7up5yagzJsrhTZifkx0jNZojlKV1lGJ1q6piLDK7BOxGXk1iZ_pg3-1phW-RozSsAIOv-S-sYNrkZ650KWDomR_CXylgzGBrVVlEyqS1o-7paJYbvsIP3qN4ATrgX8nMShKclgDfQ0NaqT0"/>
+</div>
+<div class="relative max-w-7xl mx-auto px-6">
+<h1 class="font-oswald text-5xl md:text-7xl font-bold uppercase tracking-tight text-white mb-4">
+                    Get in <span class="text-primary">Touch</span>
+</h1>
+<p class="max-w-2xl text-slate-300 text-lg">
+                    Ready to elevate your game? Our elite academy scouts and administrative team in Lagos are standing by to guide your journey to professional excellence.
+                </p>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<div class="bg-neutral-surface dark:bg-neutral-surface/40 p-8 rounded-xl border border-primary/20 shadow-2xl">
+<h2 class="font-oswald text-2xl font-semibold mb-6 uppercase tracking-wide">Inquiry Form</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Full Name</label>
+<input class="w-full bg-background-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-600" placeholder="Enter your full name" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Email Address</label>
+<input class="w-full bg-background-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-600" placeholder="example@email.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Inquiry Type</label>
+<select class="w-full bg-background-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all appearance-none text-slate-400">
+<option>Academy Admission Inquiry</option>
+<option>Elite Trials</option>
+<option>Youth Development Program</option>
+<option>Partnerships &amp; Sponsorships</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-primary mb-2">Your Message</label>
+<textarea class="w-full bg-background-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-600 resize-none" placeholder="Tell us about your footballing background..." rows="5"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-background-dark font-oswald font-bold py-4 rounded-lg uppercase tracking-widest transition-all shadow-lg shadow-primary/20" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="relative w-full h-[400px] rounded-xl overflow-hidden border border-primary/20 shadow-2xl group">
+<div class="absolute inset-0 bg-neutral-dark">
+<img class="w-full h-full object-cover opacity-50 grayscale contrast-125" data-location="Lagos, Nigeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGG9wdQ0SLqgnThwHSo29S8McGqRz8-FtWOe1fyt223Cho4-idbWa_5ts1kBDhsHmw7k6441rszyvQzHQ1yxehyzW9x_yumSi5zlUEj_W2yXsMnnNzwr-xPVRgUUMOzUAxht_aQDnKsWuW_VtC6hO2zRLVRR5n2qskTsk7t5CJACe1fHOH75s4qJTGO_Cj2Oi_0mJ7B4ZiywJHW1UXeFeYXvDVxSLTOxe36Lw27jNJ7Eyn3WvEqzq9gs1mX_clF7t6YOuSrwUOxo"/>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/40 rounded-full animate-ping"></div>
+<div class="relative bg-primary text-background-dark p-2 rounded-full shadow-lg shadow-primary/50">
+<span class="material-icons text-3xl">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="bg-neutral-dark/80 backdrop-blur-md p-2 rounded border border-white/10 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-icons">add</span>
+</button>
+<button class="bg-neutral-dark/80 backdrop-blur-md p-2 rounded border border-white/10 text-white hover:bg-primary hover:text-background-dark transition-colors">
+<span class="material-icons">remove</span>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<div class="bg-neutral-dark/90 backdrop-blur-md px-4 py-2 rounded-lg border border-primary/30 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-xs font-bold uppercase text-white">Lagos Headquarters</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-neutral-surface/30 p-6 rounded-xl border border-primary/10 flex flex-col items-center text-center group hover:border-primary/40 transition-all">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-icons">phone</span>
+</div>
+<h3 class="font-oswald text-lg font-bold uppercase mb-1">Phone</h3>
+<div class="text-[13px] text-slate-400 space-y-1">
+<p>+234 8133048795</p>
+<p>+234 8060021355</p>
+</div>
+</div>
+<div class="bg-neutral-surface/30 p-6 rounded-xl border border-primary/10 flex flex-col items-center text-center group hover:border-primary/40 transition-all">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-icons">alternate_email</span>
+</div>
+<h3 class="font-oswald text-lg font-bold uppercase mb-1">Email</h3>
+<p class="text-[13px] text-slate-400 break-all">contact@cosmosglobalevents.com.ng</p>
+</div>
+<div class="bg-neutral-surface/30 p-6 rounded-xl border border-primary/10 flex flex-col items-center text-center group hover:border-primary/40 transition-all">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-icons">place</span>
+</div>
+<h3 class="font-oswald text-lg font-bold uppercase mb-1">Location</h3>
+<p class="text-[13px] text-slate-400">Main Complex, Lagos, Nigeria</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-neutral-dark border-t border-primary/20 py-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 bg-primary/20 rounded flex items-center justify-center">
+<span class="material-icons text-primary text-2xl">sports_soccer</span>
+</div>
+<span class="font-oswald text-xl font-bold tracking-wider uppercase text-white">Cosmos Global F.A.</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Training the champions of tomorrow with professional coaching and world-class facilities. Excellence in every touch.
+                    </p>
+</div>
+<div>
+<h4 class="font-oswald text-white uppercase font-bold mb-6 tracking-wider">Quick Links</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Directors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-oswald text-white uppercase font-bold mb-6 tracking-wider">Contact Us</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li class="flex items-center gap-3">
+<span class="material-icons text-primary text-base">phone</span>
+<span>+234 8133048795, +234 8060021355</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-icons text-primary text-base">email</span>
+<span>contact@cosmosglobalevents.com.ng</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-icons text-primary text-base">location_on</span>
+<span>Lagos, Nigeria</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-neutral-surface flex items-center justify-center text-slate-400 hover:text-primary hover:bg-primary/10 transition-all" href="#">
+<img alt="Instagram" class="w-5 h-5 opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeUKEuB1wGUVaDzVNW2S0GAtrvsJojzfMh1oP6E_g_Vjg8EumTFkLJMXtnG1nTca4EHehV27CTc_Z_UiLx7QPJ_XuI934-z9rBGABzO5EfTQ48nQlLYcXPlbjG008ln75EUwdP8ra1_BQuvhOyUJGtdg5Rvldsa-4K3GBcmiJcfqcIcjvlboxbkDUFmwPvX3DY4BQOnk6IyOCL0hTnZh5ZPg0YcHnFi2D4_dOhhRdowGddCQQR482taWLgloC34imylMy-8SvAlB8"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-surface flex items-center justify-center text-slate-400 hover:text-primary hover:bg-primary/10 transition-all" href="#">
+<img alt="Twitter" class="w-5 h-5 opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1llWVBpzkxsXp5AjayyKtjNuw64qlCtLldjVI4AsTQ-JHS1k9wccQvrPm7QiOa_E8AC2qAev88My0dJC2dEWFxydNzKrGXPtTRAzrK6CnAgLdG5aRxK8ps9JtsGcL5gOStbr36J4Gf-3hwFUm-nZKZXPXqRcRJiRXQB3ybuNCH-4iDGn9S8TL-5I_FohJMP82x2-fM0IsdM9HJulfXHLNtC663O17CtvRaZPd-feMD5JsjBvY0pr3mrFIWTmTnlFksO9KCQlPhJQ"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-surface flex items-center justify-center text-slate-400 hover:text-primary hover:bg-primary/10 transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-ijvaQzhxkFpIq6fRAPXVOpqtS5ZwjmtOYFsbMlGtuHXZHBJsOZKF2bgFnbTLO9JaZlwrzCQPEtwt9DborCZOUJD3_6O4aBdRKKrnbFAWgGtb5ejpbogZe-Rlh_ScCYDPZFWQscUIHF92IAOEeJVSop32nuM7bMmsHNJOWHlMJXnspYhr7l_9bpkTLC-8YiJqksEe4MDDpIQuU_THMCNbfBYp0Zsl1o66_or1DkZTAwV-VlYdQlmW_gYffowwUf02sWoQEeNsrRk"/>
+</a>
+</div>
+<div class="flex flex-col items-center md:items-end text-[12px] text-slate-500">
+<div class="flex gap-6 mb-2 uppercase tracking-tighter font-bold">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<span>© 2025 Cosmos Global Football Academy. All Rights Reserved.</span>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

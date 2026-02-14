@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cosmos Global Football Academy | Unified Global Brand</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2D8F5C", // Cosmos Brand Green
+              "charcoal": "#121212", // Premium Dark Charcoal
+              "background-light": "#F8F9FA",
+              "background-dark": "#0A0A0A",
+              "surface-dark": "#161616",
+              "accent-red": "#DA291C",
+            },
+            fontFamily: {
+              display: ["Oswald", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "4px",
+              'lg': "8px",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #2D8F5C;
+      --charcoal-bg: #121212;
+    }
+</style>
+<style>
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+        }
+        .gallery-card:hover .overlay {
+            opacity: 1;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans antialiased">
+<header class="fixed top-0 w-full z-50 bg-charcoal/95 backdrop-blur-md border-b border-white/5">
+<nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-display font-bold tracking-tighter text-white">
+    COSMOS GLOBAL<span class="text-primary"> EVENTS</span>
+</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-xs font-semibold uppercase tracking-[0.15em] text-white hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-xs font-semibold uppercase tracking-[0.15em] text-white hover:text-primary transition-colors" href="#about">About Us</a>
+<a class="text-xs font-semibold uppercase tracking-[0.15em] text-white hover:text-primary transition-colors" href="#gallery">Gallery</a>
+<a class="text-xs font-semibold uppercase tracking-[0.15em] text-white hover:text-primary transition-colors" href="#profiles">Player Profiles</a>
+<a class="text-xs font-semibold uppercase tracking-[0.15em] text-white hover:text-primary transition-colors" href="#contact">Contact</a>
+<button class="bg-primary hover:bg-green-700 text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest transition-all duration-300">
+    Enroll Now
+</button>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<section class="relative h-screen flex items-center justify-center hero-gradient">
+<div class="container mx-auto px-6 text-center">
+<div class="inline-block px-4 py-1 mb-6 border border-primary/50 bg-primary/10 backdrop-blur-sm">
+<span class="text-primary font-bold uppercase tracking-[0.2em] text-xs">Elite Nigerian Football Excellence</span>
+</div>
+<h1 class="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-white uppercase leading-none mb-6">
+    UNLEASH YOUR<br/><span class="text-primary">POTENTIAL</span>
+</h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-300 mb-10 font-light leading-relaxed">
+    Professional football training with CAF-licensed coaches in Lagos. Join the premier academy building the next generation of African stars.
+</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<a class="w-full md:w-auto px-10 py-4 bg-primary text-white font-bold uppercase tracking-widest hover:scale-105 transition-transform" href="#">
+    Enroll Now
+</a>
+<a class="w-full md:w-auto px-10 py-4 border-2 border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all" href="#">
+    Contact Us
+</a>
+</div>
+</div>
+<div class="absolute bottom-0 w-full bg-primary py-2 overflow-hidden whitespace-nowrap">
+<div class="animate-marquee inline-block text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.3em]">
+    • RECRUITMENT OPEN FOR 2024 SEASON • LAGOS SPORTS COMPLEX TRIALS • CAF LICENSED COACHES • ELITE SCOUTING NETWORK • RECRUITMENT OPEN FOR 2024 SEASON • LAGOS SPORTS COMPLEX TRIALS •
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark transition-colors duration-300" id="about">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="max-w-xl">
+<span class="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Our Expertise</span>
+<h2 class="text-4xl md:text-6xl font-display font-bold uppercase leading-tight dark:text-white">
+    Professional<br/>Development
+</h2>
+</div>
+<div class="text-gray-500 dark:text-gray-400 max-w-sm">
+    Standardized global training methodology localized for Nigerian talent, focusing on grassroots to professional transitions.
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group relative bg-background-light dark:bg-background-dark border border-black/5 dark:border-white/5 overflow-hidden transition-all hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<img alt="Youth Development Training" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgZsLRkvadZbwJ7RFYKuoSsf46ZucLJjjxhbwG8iuE6RrmBll1xKD3WXoTg72rznrUD-8qPB3RrP6aRbdvJQmZL3u3-SDTEYZAviWJN9I8XKtocZ2Gkv2rVaryiiI0TAabevm9CcSe-bLeopUB1Ch07Sgo0eRf7UUVkyIxOIzl9iFt5m5HUDtJNsbvRdc7vAXDGzKsMsir0aQ2sTzw4i3Fm7FHO69nKmFN1wkB4s2oTbWQiq5YSshZYmA6h8pNzGr1bQjh0tJtjY8"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase px-2 py-1">Ages 6-16</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-display font-bold uppercase mb-3 dark:text-white">Youth Development</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+    Building technical foundations and match intelligence in a disciplined Lagos environment.
+</p>
+<a class="inline-flex items-center text-primary font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all duration-300" href="#">
+    Learn More <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative bg-background-light dark:bg-background-dark border border-black/5 dark:border-white/5 overflow-hidden transition-all hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<img alt="Elite Academy Training" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB750vZzxQlVaFhxumJjNkabYA251jlmoyqdpdQ--Pa8Jm0TGwq583cibNVf3qrRb6ZVheg8Kh2_8RltDwgAoQ4doT3hjtbEbMgiMPtGWKhuPlASUtq-ojb4o0Vo8CyFJ8RnsIIMzJswe3ml2Ckes8-Ii5yksJo0u4ne8ivtFlXxwdgosii__mI1jTC1d-VpildHF8GC2vgU8B27A2Ek4Mai4aLHG2SXjoOc0pXFYd1TPG7yebsS3kBEdw6VJsWHUdSk4M29cDjxl4"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase px-2 py-1">Ages 16+</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-display font-bold uppercase mb-3 dark:text-white">Elite Academy</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+    Advanced tactical training for competitive Nigerian players transitioning to professional leagues.
+</p>
+<a class="inline-flex items-center text-primary font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all duration-300" href="#">
+    Learn More <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative bg-background-light dark:bg-background-dark border border-black/5 dark:border-white/5 overflow-hidden transition-all hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<img alt="Goalkeeper School" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZLoG-eVj-2Dlc9n8gRuxFApdHQdA1o5vcsDZt_eUIVF6obF4-R4q7r8t7AmrFwLf8UXdWZWJnsWRycy34tq7oxWaYo0VGn4eH9ZQWD3lfKaekzOJPNcj2-H4-3ThL37j7A0XTegr9w9ipkFPXo96nJkIkkPuWbzelIiVuxYEMZR1DhIRZ7PvGEQlWtdUxEtbE-Tar3rgK9AFWaIC2xBeHlWC9kWMK4huiXv9QC_fd0IgKjmXFaUXx77f5ymtUXBZZ4bLds_7EduY"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase px-2 py-1">All Ages</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-display font-bold uppercase mb-3 dark:text-white">Goalkeeper School</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+    Specialized training focusing on shot-stopping, positioning, and modern distribution.
+</p>
+<a class="inline-flex items-center text-primary font-bold uppercase text-xs tracking-widest group-hover:gap-4 transition-all duration-300" href="#">
+    Learn More <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark transition-colors duration-300 overflow-hidden" id="gallery">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-5xl md:text-7xl font-display font-bold uppercase dark:text-white mb-4">The Archive</h2>
+<div class="flex justify-center gap-4 flex-wrap">
+<button class="px-6 py-2 bg-primary text-white text-xs font-bold uppercase tracking-widest">All Media</button>
+<button class="px-6 py-2 bg-white dark:bg-surface-dark text-gray-900 dark:text-white text-xs font-bold uppercase tracking-widest border border-black/10 dark:border-white/10 hover:border-primary transition-colors">Training</button>
+<button class="px-6 py-2 bg-white dark:bg-surface-dark text-gray-900 dark:text-white text-xs font-bold uppercase tracking-widest border border-black/10 dark:border-white/10 hover:border-primary transition-colors">Matches</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="relative aspect-square gallery-card group overflow-hidden bg-gray-200 dark:bg-surface-dark">
+<img alt="Gallery image 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI4tZKAeZYX_daKFPBw-6t5TmPYz10RjAroEeSicrkOv3REGANV_ki18XjQ5_pceAfUco_bSz7HBpDFTG6McS2Z2MN4V67rGy8ot2Q2YqFKu_EHmD_HO51EwQvqk4jvfEynvYIK9yvEBsOOW3jmAmhWL8-yDzZcFqZ3izv189yyCJ0SJ_QSvJsWYYmef4gBD7IWuz_FEJwfFDjyQCJri3bJbGE6h9-nL7a4zHmrFZtns7zL9xfgkThOeEQbCwx8LDgTZCTkMUOvh0"/>
+<div class="overlay absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+<span class="text-primary font-bold text-[10px] uppercase">Training Session</span>
+<p class="text-white text-sm font-bold uppercase">Technical Drills in Surulere</p>
+</div>
+</div>
+<div class="relative aspect-square gallery-card group overflow-hidden bg-gray-200 dark:bg-surface-dark">
+<img alt="Gallery image 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqQIDdbFKc7dOBZZ5ox9T13IXsvyqaCb1_RYTZtY4Wqm3JpQzZMGf4iQu7H2Od4qs-_8P0_gFn9a1kpKyAC_SXrMuqivn385edPE745t6g6GnOmj_gFRRgMrc_qQqT-d22MLk0Z66BPvBvlY5c7swXvbIQQxVktv4e3QgzrV10GjyxbCX3q3D5TGZ55D9bvHfhI2d4vlZB-gQ1VGtI7F-3kgY7ddR9ANybDxxScu4r3wapbRGI7K0GluMwk0gCg1dwn8h3ml_TVlo"/>
+<div class="overlay absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+<span class="text-primary font-bold text-[10px] uppercase">Match Day</span>
+<p class="text-white text-sm font-bold uppercase">Lagos Youth Cup Finals</p>
+</div>
+</div>
+<div class="relative aspect-square md:row-span-2 md:col-span-2 gallery-card group overflow-hidden bg-gray-200 dark:bg-surface-dark">
+<img alt="Gallery image 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfbmXWyPvqUkLTGrEf2R93B0BAuty44RcM6-h8oO5Bs9q2pI1BJb39cM9QoH7dLI1NIWiSKGTVoEyrcflSHM6qdVAgXGkULakCbVa_5U61LZNPPERHnH4vgSO--5JFnJi5Y7xgq8vwoCytjE4A6ND4gmV7nWelpcm1jIeTr-tWrpXTcaDyRTB7eo-mbmjaeZembQOEfB2U4e9gCQ2qy8UfRE_3NebN70R0JpBKAIiiCUuieOH-DyT_c8NIyEXLDt2xAcMXs54fYaU"/>
+<div class="overlay absolute inset-0 bg-black/60 flex flex-col justify-end p-8 opacity-0 transition-opacity duration-300">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Exclusive</span>
+<p class="text-white text-2xl font-display font-bold uppercase">Academy Elite Scouting Showcase 2024</p>
+</div>
+</div>
+<div class="relative aspect-square gallery-card group overflow-hidden bg-gray-200 dark:bg-surface-dark">
+<img alt="Gallery image 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTOr8YUSgPUtdSPHhu1kdmiL5jwQaEktRFVCxBALonQe3qRs2vE8JFbxS3B9KLbobztjnR82oeGcHD7HITcH9954lCoJBv5ilcN2tyP6t3yQTHle57PR85Yurr8RXnJErILYd20EZ-c7z_T5YcaeYHawUUomzbas75jt9p5cmyQoZ6UuckZ1_G39aZB9RNDMZIwSBDaMVAlJgYeVLvcyFdRUYTnVcmpOXJmZnHoDvd0TXHUrKiPZ2bTc0ovA6pm4alC3yktLDmfL8"/>
+<div class="overlay absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+<span class="text-primary font-bold text-[10px] uppercase">Education</span>
+<p class="text-white text-sm font-bold uppercase">Tactical Seminar</p>
+</div>
+</div>
+<div class="relative aspect-square gallery-card group overflow-hidden bg-gray-200 dark:bg-surface-dark">
+<img alt="Gallery image 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMGbU42BA3HvsTIeZZ3NiCCqx_cI7m1mWbSKQda8SE6ajYfYQHZJ9rDZMwm78u3HF4Ufrq3xekxuL1eYIZRxmIr2LZmrV_0z67JJYkq2CGc2bBL4GizMYB4UvG34DZ3a8Il5MzVkWtYEIWXlsgqIwUE2zc8NhONoXudI6YRo-3sOEd84bWtqm05doIs5gLIFlAqlUS6MTm8DIOplapuJt2CRicntJ_pZEsc0HCwDjVAL8HA4cyA6do2CO2gXx-Pb26V1qLDtAu9zM"/>
+<div class="overlay absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+<span class="text-primary font-bold text-[10px] uppercase">Match Highlights</span>
+<p class="text-white text-sm font-bold uppercase">Inter-Academy Derby</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark" id="testimonials">
+<div class="container mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl md:text-6xl font-display font-bold uppercase dark:text-white">Player <span class="text-primary">Voice</span></h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="relative">
+<span class="material-symbols-outlined text-primary/20 text-7xl absolute -top-10 -left-6 select-none" style="font-variation-settings: 'FILL' 1">format_quote</span>
+<div class="relative">
+<p class="text-lg italic text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+    "This academy transformed my son's confidence and skills. Chinedu now plays for Remo Stars in the NPFL! The discipline here is unmatched in Nigeria."
+</p>
+<div class="flex items-center gap-4">
+<img alt="Chinedu Okafor" class="w-14 h-14 rounded-full object-cover border-2 border-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX-OeFL3rpcuSCfNyQfIYiae2olZ7Jnggvw80fQGWS4o0r-ZSPlsmAS55hTrEseXtbcECLFlX9uOY40QhhqeZwlZg8mchJPtyKPqEhZpOqC7YAtxyZ5InBS7RVL82gaz7bKjiDwXWyzJe5YBHvQw4S8vPAHOYKuf5TsU-x8BDB7Y5rjQFmhIpGVkBeDqn4acq6tQxYzIAshixev6Y7ZAXBAEzEB3CtaBqaFtAb02R_KMwBDpT_kgBgw2oC01R4W36UPdAZ2pVwmyA"/>
+<div>
+<h4 class="font-bold dark:text-white">Chinedu Okafor</h4>
+<p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">U17 Graduate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-primary/20 text-7xl absolute -top-10 -left-6 select-none" style="font-variation-settings: 'FILL' 1">format_quote</span>
+<div class="relative">
+<p class="text-lg italic text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+    "The elite program helped me get scouted by First Bank Football Club. Best decision ever! The coaches in Lagos treat you like pros from day one."
+</p>
+<div class="flex items-center gap-4">
+<img alt="Adebayo Oladipo" class="w-14 h-14 rounded-full object-cover border-2 border-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0UU0k1_n8uutXV40oH9w4l-NnfqgOLAj2-8vUxqrYk4EY74XKa1uTbAGkjMjQZlwl427_W3leAX8uPZmo7_IMTFGco1pd-INiJu_W9dOaOBrqy-Sshqa1NRUD1S0c1FehnMp3HGqOk9YfIiIDAV0c1a-uQI2tEErS6zs7aP7yf4RyvrQNorpKblCvpM5ZHjsmvVMphRX6Nsal_WrzbGAbUX_m4y2GW5a9WRGO4txiW7uTTVoVv9Bv4Z4zCkfQm7WHXktV_chWDQ"/>
+<div>
+<h4 class="font-bold dark:text-white">Adebayo Oladipo</h4>
+<p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">CGFA Graduate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-primary/20 text-7xl absolute -top-10 -left-6 select-none" style="font-variation-settings: 'FILL' 1">format_quote</span>
+<div class="relative">
+<p class="text-lg italic text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+    "The coaches are world-class. My boy improved dramatically in just 6 months. Highly recommended for any serious young player in Lagos."
+</p>
+<div class="flex items-center gap-4">
+<img alt="Mrs. Noibi" class="w-14 h-14 rounded-full object-cover border-2 border-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARhp5qXrQzwIQDr1WlpC6zFEImGCeK5HSx9okG_TaPLdPpa_U30ZTvN06rYaGAkOgs950-sgodlYN1ir5zMG3s5yvCAfl6KFBRCef2eyussQgL7X8AkrKPl6xA_DyaeWOgK_B4zsFJMTiccweDub484alZ0DZQxCQWOweLTIQ_I7gGotkTGasLGSgSZPi65d0zbSLFc181X0wn7JsJGtO7DCy_AkZGviFOe637bSEoMKhP1yV3k4U2F3cXns_s-J1UDbV1GJiontY"/>
+<div>
+<h4 class="font-bold dark:text-white">Mrs. Noibi</h4>
+<p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Parent of U14 Player</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary">
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h2 class="text-3xl md:text-5xl font-display font-bold text-white uppercase mb-2">Ready to kickstart your career?</h2>
+<p class="text-white/80 font-medium">Limited spots available for the upcoming Lagos season trials.</p>
+</div>
+<button class="bg-white text-primary px-12 py-5 font-bold uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-300 whitespace-nowrap">
+    Register for Trials
+</button>
+</div>
+</section>
+</main>
+<footer class="bg-black text-white pt-20 pb-10">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<span class="text-3xl font-display font-bold tracking-tighter text-white block mb-6">
+    COSMOS GLOBAL<span class="text-primary"> EVENTS</span>
+</span>
+<p class="text-gray-500 text-sm leading-relaxed mb-6">
+    Standardizing elite football training in Nigeria. Building champions through world-class methodology and professional facilities in Lagos.
+</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.848 0-3.204.012-3.584.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-display font-bold uppercase tracking-widest mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">About Us</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Our Directors</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Coaching Staff</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Media Portal</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Success Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display font-bold uppercase tracking-widest mb-6">Academy Hub</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Join the Academy</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">School Programs</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Elite Residency</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Trial Schedule</a></li>
+<li><a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Kit &amp; Merchandise</a></li>
+</ul>
+</div>
+<div id="contact">
+<h4 class="font-display font-bold uppercase tracking-widest mb-6">Contact Us</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">call</span>
+<span class="text-gray-500 text-sm font-medium">+234 8133048795</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">mail</span>
+<span class="text-gray-500 text-sm font-medium">contact@cosmosglobalevents.com.ng</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">location_on</span>
+<span class="text-gray-500 text-sm font-medium">Lagos Sports Complex,<br/>Surulere, Lagos, Nigeria</span>
+</li>
+</ul>
+<div class="mt-8">
+<button class="bg-primary hover:bg-green-700 text-white px-8 py-3 text-xs font-bold uppercase tracking-widest transition-all">
+    Enroll Now
+</button>
+</div>
+</div>
+</div>
+<div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-600 text-[10px] uppercase tracking-widest">© 2025 Cosmos Global Football Academy. All Rights Reserved. Lagos, Nigeria.</p>
+<div class="flex gap-8">
+<a class="text-gray-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-gray-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+
+</body></html>

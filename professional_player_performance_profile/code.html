@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Player Performance Profile | Cosmos Global Football Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Oswald:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f8b4d",
+                        "primary-bright": "#13ec13",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0a0c0a",
+                        "charcoal": "#121212",
+                        "surface": "#141814",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "oswald": ["Oswald", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .pitch-watermark {
+            background-image: linear-gradient(rgba(10, 12, 10, 0.96), rgba(10, 12, 10, 0.96)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdDYmFhmH6RGMWOgIKQfooB_rbCXclBu-x0l8Vqu5AClITlcpnc8WigGpULeQtqNI1lRsO9e-mEKQY0jUAVokwmVwN5jnxiDAU84M2uJ2YnByY1VrZHyVnXAJIXKpiIHfY_iz4roq9aGCgd8-m28y8h8dKP3O2MydVOOLBbxa0DnUhm3NpfytZsUfIyT_f3Ft5NG23QZNy8nTyPDoW1xtlDCiMpErq-APZ3y-F8kZLBGx-k79McGH9vi8S161JAtsCoEtVzUgpQyg');
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0c0a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1f8b4d;
+            border-radius: 10px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 min-h-screen pitch-watermark custom-scrollbar">
+<header class="bg-black border-b border-white/10 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12">
+<img alt="Cosmos Global Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfIB7Jel635ny4L892sICjY7GrFv8qveTdLUnvfCaYg7N48VS2zt7q7mjdJUlM7Sa9BF-lAUFV3Ld5AszXOLW9Zofu4DlpWEJF-JRLHguKLOc_d-bboD0jhzEr1AiMVsaayRtZj589jDArpUpsxBwydecKf7PCkIKtCznigMnUkRKuUCT24PnVEqiaBZsoLyjR5Lkb6h3Ef59HjmftRRPZEBdRRWMylZNmufZSfowz_469RJGmsu74vxzBLTnd9oM5qifR2-oTWHQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-oswald text-xl tracking-tighter font-bold text-white uppercase leading-tight">Cosmos Global<span class="text-primary">F.A.</span></span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-slate-300">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+<a class="hover:text-primary transition-colors" href="#">Directors</a>
+<a class="hover:text-primary transition-colors" href="#">Blog</a>
+<a class="hover:text-primary transition-colors border-b-2 border-primary pb-1" href="#">Scouting</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<section class="grid grid-cols-12 gap-8 mb-16 items-end">
+<div class="col-span-12 lg:col-span-5 relative group">
+<div class="absolute -inset-1 bg-primary/20 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative rounded-xl overflow-hidden aspect-[4/5] border border-white/10 shadow-2xl">
+<img alt="Player Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVoyJM8tbts-OjeqMoSge3g4ypJgyejBgsTjdbEkKIw4-sOBJSS7YZzFuSyA4zi8HOhyomi78S0XoiGsuieI-sGox_Aii6lSQvZ_r-Km6KOIRk6nLftlnP2Tjc6XKGkSdOBNcPq21IYY-ONwb_HVwr3S9UPUJTns9lUw89_qWONxlakc8DYV66_Jbjg9NA_iGDxjtQScBNpK4hJwcdfKbsnFaZsaqsVDiSeKGRTnXfj9Unvy-C0E0PV14BArQzXmpRYicjLm0HHG8"/>
+<div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7 flex flex-col justify-end pb-6">
+<div class="flex items-center gap-4 mb-6">
+<span class="bg-primary/20 text-primary-bright px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border border-primary/30">NPFL Academy Prospect</span>
+<span class="text-slate-500 font-mono text-sm tracking-widest">UID: CGFA-NG-2024-082</span>
+</div>
+<h1 class="font-oswald text-[clamp(4rem,10vw,8rem)] font-bold uppercase leading-[0.85] tracking-tighter mb-6">
+                    Marcus <span class="text-primary italic">Vance</span>
+</h1>
+<div class="flex flex-wrap items-center gap-10">
+<div class="flex flex-col">
+<span class="text-primary font-oswald text-6xl font-bold leading-none">09</span>
+<span class="text-slate-500 uppercase text-xs tracking-widest font-bold mt-1">Squad Number</span>
+</div>
+<div class="h-14 w-px bg-white/10 hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="text-slate-100 font-oswald text-4xl font-bold leading-none uppercase">Center Forward</span>
+<span class="text-slate-500 uppercase text-xs tracking-widest font-bold mt-1">Primary Position</span>
+</div>
+<div class="h-14 w-px bg-white/10 hidden sm:block"></div>
+<div class="flex items-center gap-3 bg-surface/50 p-3 pr-5 rounded-lg border border-white/5">
+<div class="w-10 h-10">
+<img alt="CGFA Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfIB7Jel635ny4L892sICjY7GrFv8qveTdLUnvfCaYg7N48VS2zt7q7mjdJUlM7Sa9BF-lAUFV3Ld5AszXOLW9Zofu4DlpWEJF-JRLHguKLOc_d-bboD0jhzEr1AiMVsaayRtZj589jDArpUpsxBwydecKf7PCkIKtCznigMnUkRKuUCT24PnVEqiaBZsoLyjR5Lkb6h3Ef59HjmftRRPZEBdRRWMylZNmufZSfowz_469RJGmsu74vxzBLTnd9oM5qifR2-oTWHQ"/>
+</div>
+<div class="flex flex-col">
+<span class="text-slate-400 font-bold uppercase text-[10px] tracking-widest leading-none mb-1">Affiliation</span>
+<span class="text-slate-100 font-medium uppercase text-sm tracking-wide">Cosmos Lagos Elite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-8 space-y-8">
+<div class="bg-surface border border-white/5 rounded-2xl p-8 shadow-inner">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4">
+<h2 class="font-oswald text-3xl uppercase tracking-tight flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">analytics</span> Performance Analytics
+                        </h2>
+<span class="px-3 py-1 bg-white/5 rounded text-[10px] text-slate-400 uppercase font-bold tracking-[0.2em] border border-white/5">NPFL Youth League 2023/24</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Pace &amp; Acceleration</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">92</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 92%"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Distribution Accuracy</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">84</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 84%"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Finishing Precision</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">89</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 89%"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Endurance (90+ Min)</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">78</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 78%"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Positional Awareness</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">85</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-400">Aerial Advantage</label>
+<span class="text-primary-bright font-bold font-oswald text-xl">91</span>
+</div>
+<div class="h-1.5 bg-black rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 91%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-white/5 rounded-2xl p-8 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[200px] rotate-12">fact_check</span>
+</div>
+<h2 class="font-oswald text-3xl uppercase tracking-tight flex items-center gap-3 mb-8 relative z-10">
+<span class="material-symbols-outlined text-primary text-3xl">description</span> Technical Scout Report
+                    </h2>
+<div class="space-y-8 relative z-10">
+<div>
+<h4 class="text-primary-bright font-bold text-xs uppercase tracking-[0.2em] mb-3">Tactical Profile</h4>
+<p class="text-slate-400 leading-relaxed text-base font-light">
+                                Marcus is a prototype Nigerian "Modern 9" who excels in high-heat West African playing conditions. His technical profile shows elite ball retention under pressure. While his primary instinct is to penetrate the defensive line, his tactical growth has seen him evolve into a "false 9" role when required, linking midfield to attack with rapid one-touch sequences.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="bg-black/30 p-5 rounded-xl border border-white/5">
+<h4 class="text-primary-bright font-bold text-[10px] uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">trending_up</span> Key Strengths
+                                </h4>
+<ul class="text-slate-300 text-sm space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg leading-none">check_circle</span> Superior burst acceleration off-the-mark.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg leading-none">check_circle</span> Ambidextrous finishing capability.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg leading-none">check_circle</span> High-pressing resilience in transition.</li>
+</ul>
+</div>
+<div class="bg-black/30 p-5 rounded-xl border border-white/5">
+<h4 class="text-slate-500 font-bold text-[10px] uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">build</span> Development Areas
+                                </h4>
+<ul class="text-slate-400 text-sm space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-slate-600 text-lg leading-none">adjust</span> Patience in final-third build-up.</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-slate-600 text-lg leading-none">adjust</span> Tactical discipline during set-piece recovery.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="col-span-12 lg:col-span-4 space-y-8">
+<div class="bg-surface border border-white/10 rounded-2xl p-6 shadow-xl">
+<h2 class="font-oswald text-2xl uppercase tracking-tight border-b border-white/10 pb-4 mb-6 flex items-center justify-between">
+                        Biometric Data
+                        <span class="material-symbols-outlined text-primary">fingerprint</span>
+</h2>
+<div class="space-y-1">
+<div class="flex justify-between items-center py-3.5 border-b border-white/5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Date of Birth</span>
+<span class="font-medium text-sm">14 May 2003 (21)</span>
+</div>
+<div class="flex justify-between items-center py-3.5 border-b border-white/5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Nationality</span>
+<div class="flex items-center gap-2">
+<span class="font-medium text-sm">Nigeria</span>
+<div class="w-5 h-3.5 bg-green-700 flex flex-col items-center">
+<div class="w-full h-full border-x-2 border-white"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center py-3.5 border-b border-white/5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Height</span>
+<span class="font-medium text-sm">188 cm</span>
+</div>
+<div class="flex justify-between items-center py-3.5 border-b border-white/5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Weight</span>
+<span class="font-medium text-sm">84 kg</span>
+</div>
+<div class="flex justify-between items-center py-3.5 border-b border-white/5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Strong Foot</span>
+<span class="font-medium text-sm text-primary-bright">Right / Both</span>
+</div>
+<div class="flex justify-between items-center py-3.5">
+<span class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em]">Representation</span>
+<span class="font-medium text-sm">Cosmos Global Mgmt</span>
+</div>
+</div>
+</div>
+<div class="bg-surface/50 border border-white/5 rounded-2xl p-5">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Video Scouting Reel</h3>
+<span class="text-[9px] text-primary-bright uppercase font-bold px-1.5 py-0.5 border border-primary/30 rounded">HD 4K</span>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-video group cursor-pointer border border-white/10">
+<img alt="Highlight Preview" class="w-full h-full object-cover brightness-[0.4] group-hover:brightness-[0.6] group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA6rzPDJY2wiR5UJ1MgTWTeDXNJTzRRs3iJYqa99fQbBlxntdWfzsmdv-eGQaIYfd1FqX0Jpo7kfEX3oyJ6WBbtQAFOVG28Z2L2iTQVhksACZB8mYjnCZox2Rw9-kkf8a4jsB6fkOeTo2_H1CCa-iX14kG1TEmuNFFhAhs6TqBzk3DsRYOZ-N_cdjpQPyzGPB5kHtSXcNIPPDnO_cYuC6GzuBhOHfRFAT_dKkNCcKo_JpMUz2PX4uMRiXlaiktgrkF4r03egtVRy0"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 right-3">
+<p class="text-[10px] bg-black/80 backdrop-blur px-3 py-1.5 rounded-lg text-white border border-white/10 inline-flex items-center gap-2 font-medium">
+<span class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span>
+                                Match Highlights vs Enyimba FC U-21
+                            </p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full bg-primary hover:bg-green-700 text-white font-oswald text-lg uppercase py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-2xl shadow-primary/20 group">
+<span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">download_2</span> Export Comprehensive PDF Report
+                    </button>
+<button class="w-full border border-white/10 hover:bg-white/5 text-slate-100 font-oswald text-lg uppercase py-4 rounded-xl transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">send</span> Inquiry via Scout Portal
+                    </button>
+</div>
+<div class="p-6 bg-gradient-to-br from-primary/5 to-primary/20 border border-primary/20 rounded-2xl text-center relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 text-primary/10 select-none">
+<span class="material-symbols-outlined text-8xl">verified_user</span>
+</div>
+<p class="text-[10px] text-primary-bright font-bold uppercase tracking-[0.25em] mb-2">Academic Contract Status</p>
+<p class="font-oswald text-3xl uppercase text-white mb-1">Active / Pro-Ready</p>
+<p class="text-[10px] text-slate-500 uppercase font-medium tracking-widest">Graduation Cycle: 2026</p>
+</div>
+</aside>
+</div>
+<footer class="mt-24 pt-12 border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<img alt="Cosmos Logo" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfIB7Jel635ny4L892sICjY7GrFv8qveTdLUnvfCaYg7N48VS2zt7q7mjdJUlM7Sa9BF-lAUFV3Ld5AszXOLW9Zofu4DlpWEJF-JRLHguKLOc_d-bboD0jhzEr1AiMVsaayRtZj589jDArpUpsxBwydecKf7PCkIKtCznigMnUkRKuUCT24PnVEqiaBZsoLyjR5Lkb6h3Ef59HjmftRRPZEBdRRWMylZNmufZSfowz_469RJGmsu74vxzBLTnd9oM5qifR2-oTWHQ"/>
+<span class="font-oswald text-lg font-bold uppercase tracking-tighter">Cosmos Global<span class="text-primary">F.A.</span></span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed max-w-xs mb-6">
+                        Training the champions of tomorrow with professional coaching and world-class facilities.
+                    </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-oswald uppercase text-sm tracking-widest mb-6">Quick Links</h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Directors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-oswald uppercase text-sm tracking-widest mb-6">Contact Us</h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +234 8133048795
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +234 8060021355
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            contact@cosmosglobalevents.com.ng
+                        </li>
+</ul>
+</div>
+</div>
+<div class="py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-600 text-[11px] uppercase tracking-widest font-medium">
+                    © 2025 Cosmos Global Football Academy. All Rights Reserved.
+                </p>
+<div class="flex items-center gap-3 text-slate-600 text-[11px] uppercase tracking-widest font-bold">
+<span>Verified Analytics:</span>
+<span class="text-primary tracking-tighter text-xs">CGA.NG.DATA_NODE</span>
+</div>
+</div>
+</footer>
+</main>
+
+</body></html>
